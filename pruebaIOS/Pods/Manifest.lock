@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ZVActivityIndicatorView (0.2.2)
+  - ZVProgressHUD (2.0.4):
+    - ZVActivityIndicatorView
+
+DEPENDENCIES:
+  - Alamofire
+  - ZVProgressHUD (~> 2.0.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ZVActivityIndicatorView
+    - ZVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ZVActivityIndicatorView: 7e2ee4153a1a35f311a4b3a21a51a97a6b4fab33
+  ZVProgressHUD: 9b0e601218ee2bfc4c7637241d42d7e087f67ba9
+
+PODFILE CHECKSUM: 0ca7fb8e1162bcca0bf493ece9179b73e7af8798
+
+COCOAPODS: 1.9.1

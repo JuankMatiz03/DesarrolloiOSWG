@@ -40,12 +40,26 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92913229695431476" green="0.92913229695431476" blue="0.92913229695431476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Añadir Tu Producto"/>
+                                <connections>
+                                    <action selector="btnProdAction:" destination="zKU-QG-uih" eventType="touchUpInside" id="4wj-WP-oty"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="eBU-07-L1u"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nuevo producto" id="L8M-4j-AMg"/>
+                    <navigationItem key="navigationItem" title="Nuevo producto" id="L8M-4j-AMg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="Wah-Gl-bon">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="L23-xF-BrY" kind="presentation" modalPresentationStyle="fullScreen" id="xUh-pH-vpP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnProd" destination="XqV-Aj-5Hm" id="S7K-0g-iVQ"/>
+                        <outlet property="textFielProduct" destination="KLR-uO-4NB" id="Jcb-tH-bbt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rv4-pB-OPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +82,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ab-5z-rQS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5.625" y="52.816901408450704"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="SpC-CH-OW9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="L23-xF-BrY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gv8-i3-WLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="-117"/>
         </scene>
     </scenes>
 </document>

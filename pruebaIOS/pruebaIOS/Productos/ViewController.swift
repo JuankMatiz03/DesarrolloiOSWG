@@ -14,8 +14,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var endValue: UILabel!
     
     var listaProductos = [[String: Any]]()
+    var total = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if let res = response.result.value {
                 self.listaProductos = res as! [[String: Any]]
                 self.tableView.reloadData()
+                self.cacularTotal()
                 print(self.listaProductos)
             }else {
                 self.alert(mensaje: "Error, Sin conexion con el servidor")
@@ -74,6 +77,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let url = "http://localhost:3000/api/v1/counter"
         Alamofire.request(url, method: .delete, parameters: params).responseJSON { (response) in
             if let res = response.result.value {
+                self.listaProductos = res as! [[String: Any]]
+                self.tableView.reloadData()
+                self.cacularTotal()
                 self.alert(mensaje: "¡Producto eliminado!")
             }else {
                 self.alert(mensaje: "Error al eliminar el producto")
@@ -81,6 +87,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    
+    public func cacularTotal() {
+        var total = Int()
+        listaProductos.forEach { (productos) in
+            total += productos["count"] as! Int
+            endValue.text = String(total)
+            print(total)
+            
+        }
+    }
     
     @objc func contadorMasBtn(btnMas: UIButton) {
         let index = btnMas.tag
@@ -100,6 +116,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             if let res = response.result.value {
                 self.listaProductos = res as! [[String: Any]]
                 self.tableView.reloadData()
+                self.cacularTotal()
                 print(res)
             }else {
                 self.alert(mensaje: "Erorr al actualizar el contador")

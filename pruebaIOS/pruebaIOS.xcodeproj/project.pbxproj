@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C6EED0D686B0176282D98C31 /* Pods_pruebaIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8508573183BE7BC90E2E0CC6 /* Pods_pruebaIOS.framework */; };
-		E091B4D524673F7B00E25007 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091B4D424673F7B00E25007 /* NetworkingClient.swift */; };
 		E0DF434C2464F573006BCA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF434B2464F573006BCA56 /* AppDelegate.swift */; };
 		E0DF434E2464F573006BCA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF434D2464F573006BCA56 /* SceneDelegate.swift */; };
 		E0DF43502464F573006BCA56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF434F2464F573006BCA56 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		21D830B22AE1746C6E53103E /* Pods-pruebaIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaIOS.release.xcconfig"; path = "Target Support Files/Pods-pruebaIOS/Pods-pruebaIOS.release.xcconfig"; sourceTree = "<group>"; };
 		8508573183BE7BC90E2E0CC6 /* Pods_pruebaIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E091B4D424673F7B00E25007 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		E0DF43482464F573006BCA56 /* pruebaiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF434B2464F573006BCA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DF434D2464F573006BCA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				E0DF43542464F579006BCA56 /* Assets.xcassets */,
 				E0DF43562464F579006BCA56 /* LaunchScreen.storyboard */,
 				E0DF43592464F579006BCA56 /* Info.plist */,
-				E091B4D424673F7B00E25007 /* NetworkingClient.swift */,
 			);
 			path = pruebaIOS;
 			sourceTree = "<group>";
@@ -245,7 +242,6 @@
 			files = (
 				E0DF43502464F573006BCA56 /* ViewController.swift in Sources */,
 				E0DF434C2464F573006BCA56 /* AppDelegate.swift in Sources */,
-				E091B4D524673F7B00E25007 /* NetworkingClient.swift in Sources */,
 				E0DF434E2464F573006BCA56 /* SceneDelegate.swift in Sources */,
 				E0DF436224650273006BCA56 /* cellGenericaTableViewCell.swift in Sources */,
 				E0DF43672465D497006BCA56 /* addProductViewController.swift in Sources */,

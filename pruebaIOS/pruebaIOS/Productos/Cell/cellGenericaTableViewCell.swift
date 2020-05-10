@@ -16,6 +16,7 @@ class cellGenericaTableViewCell: UITableViewCell {
     @IBOutlet weak var masBtn: UIButton!
     @IBOutlet weak var deletedItemBtn: UIButton!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
